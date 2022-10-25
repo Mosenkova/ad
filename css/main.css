@@ -1,0 +1,853 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* global reset */
+html, body, body div, div, span, label, h1, h2, h3, h4, h5, h6, p, a, em, img, s, small, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, button, form, fieldset, article, aside, footer, header, main, nav, section, input, textarea, select, option {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+}
+html * {
+    max-height: 1000000px;
+}
+
+/* common */
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
+}
+h1 {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 74px;
+    margin: 0;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+}
+h5 {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000;
+	padding: 64px 115px 64px 114px;
+
+}
+h3 {
+    font: normal 400 20px/30px 'Roboto';
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    padding: 8px 44px 14px 32px;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/* structure */
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    font: normal 400 16px/26px 'Roboto';
+    letter-spacing: 0.05em;
+}
+header {
+    height: 116px;
+    flex: none;
+    position: relative;
+    z-index: 1;
+}
+footer {
+    height: 657px;
+    background: #316099;
+    flex: none;
+}
+main {
+    flex: auto;
+}
+
+							/* header */
+header .container {
+    height: 48px;
+    padding: 34px 0;
+}
+.logo {
+    float: left;
+    width: 46px;
+    height: 48px;
+    background: url('../images/logo.png') center center no-repeat;
+}
+.user {
+    float: right;
+    width: 34px;
+    height: 48px;
+    background: url('../images/user.png') center center no-repeat;
+}
+/*2 страница контакты*/
+.contactus {
+	height: 250px;
+	width: 100%;
+	background: url('../images/contactus.png') no-repeat center center;
+	background-size: cover;
+}
+.contactus h1 {
+	font-weight: 500;
+	font-size: 44px;
+	line-height: 74px;
+	letter-spacing: 0.04em;
+	color: #fff;
+	text-align: center;
+	padding-top: 56px;
+}
+.contactus p {
+	width: 780px;
+	color: #fff;
+	text-align: center;
+	opacity: 0.6;
+	margin: 14px auto 44px;
+}
+
+							/* main */
+.grad {
+    height: 768px;
+    background: linear-gradient(0deg, #EBF3FB 0%, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+.grad .container {
+    overflow: hidden; 
+    padding: 183px 0 94px;
+    height: 491px;
+    background: url('../images/illustration.png') right 183px no-repeat;
+}
+.grad .container img { 
+	float: right; 
+	margin-left: 80px;
+}
+container p {
+	margin: 0px 0px 82px;
+	color: #1F3F68;
+	font-family: 'Roboto';
+	font-style: Regular;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px; 
+	text-align: left;
+	letter-spacing: 0.05em;
+	padding:  32px 827px 317px 114px;
+	opacity: 0.6;
+}
+main button {
+    height: 56px;
+    width: 220px;
+    margin: 71px auto auto 0px;
+    background: #5a98d0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    border-radius: 10px;
+}
+/* контейнер What с 3 картинками*/
+.containerWhat {
+    width: 1140px;
+    margin: 0 auto;
+	display: flex;
+    gap: 32px; 
+}
+.faces {
+    height: 480px;
+    width: 359px;
+    background: #fff;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+ }
+.man {
+	margin: 44px 117px 8px 70px;
+}
+.red {
+    margin: 44px 111px 3px 116px;
+}
+.woman {
+    margin: 48px 117px 6px 94px;
+}
+.faces a {
+    color: #5A98D0;
+    display: inline-block;
+	font-family: 'Roboto';
+	font-style: Regular;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 30px;
+	letter-spacing: 0.05em;
+	padding: 27px 249px 44px 32px;
+	Fill: Solid;
+}
+.faces a::after {
+	 content: '';
+	background: url('../images/arrow.png') center center no-repeat;
+	width: 20px;
+	height: 20px;
+	padding-right: 50px;
+}
+.faces p {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: 0.05em;
+	color: #1F3F68;
+	opacity: 0.6;
+	padding: 0 59px 29px 32px;
+	text-align: left;
+}
+/* наш завершающий проект*/
+.project h2 {
+	font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000;
+	padding: 64px 113px 32px 113px;
+}
+.project p {
+	margin: 0px 0px 82px;
+	color: #222222;
+	height: 52px;
+	left: 308px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px; 
+	text-align: center;
+	letter-spacing: 0.05em;
+}
+.containergrid {
+	display: grid;  
+	grid-template-areas: 'a a' 'b c'; 
+	gap: 32px;
+	padding-bottom: 112px;
+	width: 1140px;
+	margin: 0 auto;
+}
+.smarthome {
+	width: 1140px;
+	height: 480px; 
+	border-radius: 10px;
+	grid-area: a; 
+	background: red; 
+}
+.phonesapp {
+    width: 554px;
+	height: 417px; 
+	border-radius: 10px;
+	grid-area: b; 
+	background: green; 
+	gap: 32px;
+}
+.car {
+    width: 554px;
+	height: 417px; 
+	border-radius: 10px;
+	grid-area: c; 
+	background: blue; 
+	gap: 32px;
+}
+.smarthome h4 {
+	font-family: 'Roboto';
+	font-style: Regular;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 46px;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+	padding: 64px 64px 304px 678px;
+	position: absolute;
+	align: right;
+}
+.phonesapp h4 {
+	font-family: 'Roboto';
+	font-style: Regular;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 46px;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+	padding: 32px 339px 339px 32px;
+	position: absolute;
+}
+.car h4 {
+	font-family: 'Roboto';
+	font-style: Regular;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 46px;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+	padding:  32px 264px 339px 32px;
+	position: absolute;
+}
+/* 2 страница*/
+.containerwrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 99px;
+	margin: 57px auto 96px;
+}
+.address {
+    height: 668px;
+    width: 301px;
+    padding: 0;
+ }
+.address img {
+    display: block;
+ }
+.address h3 {
+	font-weight: 500;
+	letter-spacing: 0.04em;
+	margin: 40px auto 24px;
+	text-transform: uppercase;
+}
+.address p {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: 0.04em;
+	opacity: 0.6;
+	list-style: none;
+	display: inline-block;
+}
+.address a {
+	display: inline-block;
+	height: 40px;
+	vertical-align: center;
+}
+.phone::before {
+	content: '';
+	display: inline-block;
+	background: url(../images/ic_phone.png) no-repeat left center;
+	background-size: 26px;
+	width: 24px;
+	height: 24px;
+	padding-left:40px;
+	vertical-align: center;
+	opacity: 0.6;
+}
+.web::before {
+	content: '';
+	background: url(../images/web.png) no-repeat left center;
+	background-size: 20px;
+	width: 24px;
+	height: 24px;
+	padding-left: 40px;
+}
+.mail::before {
+	content: '';
+	background: url(../images/screenshot_2.png) no-repeat left center;
+	background-size: 20px;
+	width: 24px;
+	height: 24px;
+	padding-left: 40px;
+}
+.message {
+	width: 428px;
+	height: 688px;
+	padding: 56px;
+	background: #FFFFFF;
+	box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+	border-radius: 10px;
+}
+.message h3 {
+	font-weight: 500;
+	letter-spacing: 0.04em;
+	margin-bottom: 48px;
+	text-transform: uppercase;
+}
+.message h4 {
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 0.04em;
+	color: rgba(31,63,104,.8);
+	margin: 32px 0 8px;
+}
+input, textarea {
+	font: normal 300 16px/26px 'Roboto';
+	box-sizing: border-box;
+	width: 100%;
+	border: 1px solid rgb(53,110,173);
+	border-radius: 10px;
+	padding: 20px 35px;
+	letter-spacing: 0.04em;
+	opacity: 0.4;
+}
+textarea {
+	height: 144px;
+}
+.message button {
+	background: #5A98D0;
+	box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+	border-radius: 10px;
+	text-transform: uppercase;
+	width: 100%;
+	height: 72px;
+	font-weight: 500;
+	font-size: 16px;
+	letter-spacing: 0.04em;
+}
+.containermap {
+	width: 940px;
+	padding-bottom: 113px;
+	margin: 0 auto;
+}
+
+							/* footer */
+footer a {
+	color: #fff;
+}
+.liner {
+	height: 0;
+	border-top: 1px solid rgba(255,255,255,.4);
+}
+footer button {
+	float: right;
+	background: #5a98d0;
+	height: 56px;
+	width: 237px;
+	color: #fff;
+	letter-spacing: 0.04em;
+	margin: 100px 0 106px 408px;
+}
+footer .container {
+	padding: 64px 0;
+	overflow: hidden;
+}
+footer h2 {
+	color: #fff;
+	text-align: left;
+	margin: 27px 0 32px;
+}
+footer p {
+	color: #fff;
+}
+ol + p {
+	opacity: 0.4;
+}
+ol {
+	list-style-type: upper-alpha;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 60px 22px;
+}
+ol li {
+	width: 336px;
+}
+ol li::before {
+	width: 20px;
+	height: 30px;
+	float: left;
+	content: '';
+}
+
+
+/* adaptive */
+@media screen and (max-width:1204px) {
+h1 {
+	margin: 0 25% auto 0;
+}
+h5 {
+	margin: 64px 32px 64px;
+}
+.container {
+	width: auto;
+	margin: 0 32px;
+}
+body {
+	width: 768px;
+	margin: 0 auto;
+}
+							/* header */
+.contactus h1 {
+	padding-top: 50px;
+}
+.contactus p {
+	width: 520px;
+	margin: 14px auto 24px;
+}
+							/* main */
+.grad {
+	height: 668px;
+	background: linear-gradient(0deg, #DFEDF8 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+.grad .container {
+	overflow: hidden; 
+	padding: 92px 0 100px;
+	height: 476px;
+}
+.grad .container img { 
+	width: 336px;
+	position: absolute; 
+	bottom: 107px;
+	right: 0;
+	margin-left: 0;
+}
+container p {
+	margin: 32px 40% auto 0px;
+	height: 82px;
+}
+main button {
+	margin: 72px 19px auto auto;
+	background: #5a98d0;
+	color: #fff;
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: 0.04em;
+	border-radius: 10px;
+}
+/* контейнер What с 3 картинками*/
+.containerWhat {
+	flex-direction: column;
+	align-items: center;
+	gap: 32px; 
+}
+.faces {
+	width: 335px;
+	height: 448px;
+}
+.man {
+	margin: 40px 105px 0 60px;
+}
+.red {
+	margin: 40px 102px 0 99px;
+}
+.woman {
+	margin: 40px 109px -15px 68px;
+}
+/* наш завершающий проект*/
+.project h2 {
+	margin: 127px 32px 32px;
+}
+.project p {
+	margin: 0 89px 64px;
+	color: #222222;
+}
+.containergrid {
+	padding-bottom: 109px;
+}
+.smarthome h4 {
+	margin: 19px auto auto 19px;
+	font-size: 28px;
+	line-height: 46px;
+}
+.phonesapp h4 {
+	margin: 19px auto auto 19px;
+	font-size: 28px;
+	line-height: 46px;
+}
+.car h4 {
+	margin: 19px auto auto 19px;
+		font-size: 28px;
+	line-height: 46px;
+}
+/* 2 страница*/
+.containerwrapper {
+	flex-direction: column;
+	gap: 64px;
+	margin: 64px auto;
+}
+.address {
+	width: 301px;
+	height: 679px;
+	margin: 0;
+ }
+.message {
+	width: 412px;
+	height: 672px;
+	margin-top: 0;
+	padding: 54px;
+}
+.message h3 {
+	font-weight: 500;
+	letter-spacing: 0.04em;
+	margin-bottom: 26px;
+	text-transform: uppercase;
+}
+.message h4 {
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 0.04em;
+	opacity: 0.8;
+	color: #1F3F68;
+	margin: 26px 0 8px;
+}
+.message button {
+	margin: 58px auto 56px; 
+}
+.containermap {
+	padding-bottom: 0;
+	margin: 0;
+}
+.containermap>img {
+	width: 768px;
+	margin: 0;
+}
+							/* footer */
+footer {
+	height: 654px;
+	margin-top: 64px;
+}
+footer .container {
+	padding: 64px 92px;
+}
+footer button {
+	height: 32px;
+	width: 133px;
+	margin: 95px 0 65px 0;
+}
+footer h2 {
+	width: 336px;
+	margin: -16px 0 22px;
+}
+footer p {
+	width: 336px;
+}
+ol {
+	display: block;
+	margin-bottom: 53px;
+}
+ol li {
+	width: auto;
+	margin-bottom: 19px;
+}
+ol li::before {
+	height: 10px;
+	width: 40px;
+}
+
+
+@media screen and (max-width:769px) {
+h1 {
+	margin: 0 auto 12px;
+	font-size: 32px;
+	line-height: 38px;
+	text-align: center;
+}
+h5 {
+	font-size: 24px;
+	line-height: 28px;
+	margin: 48px 16px 32px;
+}
+h3 {
+	margin: 0 0 14px;
+}
+.container {
+	width: auto;
+	margin: 0 16px;
+}
+body {
+	width: 683px;
+	margin: 0 auto;
+}
+header {
+	height: 80px;
+}
+main {
+	margin-top: -80px;
+}
+							/* header */
+header .container {
+	height: 48px;
+	padding: 16px 0 25px;
+}
+.contactus h1 {
+	padding-top: 50px;
+}
+.contactus p {
+	width: 520px;
+	margin: 14px auto 24px;
+}
+							/* main */
+.grad {
+	height: 376px;
+	background: linear-gradient(0deg, #DAEAF7 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+.grad .container {
+	height: 250px;
+	padding: 80px 0 40px;
+}
+.grad .container img { 
+	display: none;
+}
+container p {
+	margin: 12px 0 32px;
+	height: 96px;
+}
+main button {
+	display: block;
+	height: 27px;
+	width: 108px;
+	margin: 0 auto;
+	border: none;
+	background: transparent;
+	color: #fff;
+	font-size: 12px;
+	line-height: 26px;
+}
+/* контейнер What с 3 картинками*/
+.faces p {
+	text-align: left;
+}
+.faces {
+	width: 335px;
+	height: 448px;
+}
+faces > div {
+	width: 275px;
+	height: 215px;
+	padding: 30px;
+}
+/* наш завершающий проект*/
+.project h2 {
+	font-size: 24px;
+	line-height: 28px;
+	margin: 64px 16px 32px;
+}
+.project p {
+	margin: 0 0 82px;
+	color: #222222;
+}
+.containergrid {
+	gap: 32px;
+	grid-template-areas: 'a a' 'b b' 'c c';
+	padding-bottom: 64px;
+}
+.smarthome {
+	height: 144px;
+	width: 350px;
+	background: url('../images/smarthome.png') center no-repeat;
+}
+.phonesapp {
+	width: 350px;
+	height: 255px;
+}
+.car {
+	width: 350px;
+	height: 255px;
+}
+.smarthome h4 {
+	display: none;
+	font-size: 16px;
+	line-height: 19px;
+	margin: 16px 16px auto auto; 
+}
+.phonesapp h4 {
+	font-size: 16px;
+	line-height: 19px;
+	margin: 26px auto auto 16px;
+}
+.car h4 {
+	font-size: 16px;
+	line-height: 19px;
+	margin: 16px auto auto 16px;
+}
+/* 2 страница*/
+.message {
+	width: 270px;
+	height: 442px;
+	margin-top: 0;
+	padding: 36px;
+}
+.message h3 {
+	font-size: 20px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	padding-right: 50%;
+}
+.message h4 {
+	font-size: 14px;
+	margin: 32px 0 5px;
+}
+.message button {
+	width: 272px;
+	height: 46px;
+	margin: 46px auto 36px;
+}
+.containermap {
+	width: 375px;
+	padding-bottom: 0;
+	margin: 0;
+}
+.containermap > img {
+	width: 375px;
+	margin: 0;
+}
+							/* footer */
+footer {
+	height: 553px;
+}
+footer .container {
+	display: flex;
+	flex-direction: column;
+	padding: 18px 0 40px;
+}
+footer button {
+	order: 1;
+	float: none;
+	width: 108px;
+	margin: 33px auto 0;
+}
+footer h2 {
+	width: auto;
+	text-align: center;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 0px;
+	margin: 0 0 27px;
+}
+footer p {
+	width: auto;
+	text-align: center;
+}
+ol {
+	margin: 14px 0 11px 22px;
+}
+ol li {
+	line-height: 19px;
+}
+ol li::before {
+	height: 20px;
+	width: 20px;
+}
