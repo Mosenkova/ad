@@ -4,24 +4,31 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Contact Us</title>
-		<script src="js/main.js"></script>
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="./css/main.css">
+		<link rel="icon" type="image"/x-icon" href="./img/favicon aunt.ico">
 	</head>
+	
 	<body>
-		<header>
-			<div class="container">
-				<a href="#" class="logo"></a>
-				<a href="#" class="user"></a>
+		<div class="top1">
+			<div class="container top_box1">
+				<div class="menu">
+					<ul class="menuMain">
+						<li><a href="index.html"><img src="img/logo.svg" alt="logo"></a></li>
+						<li><a href="contacts.html"><img src="img/contacts.svg" alt="contacts"></a></li>
+					</ul>
+				</div>
 			</div>
-		</header>
-		<main>
-			<div class="contactus">
-				<h1>Contact Us</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua.</p>
-			</div>
-			<div class="containerwrapper">
+		
+
+				<div class="contactus">
+					<h1>Contact Us</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+		</div>
+	<div class="containerwrapper0">
+		<div class="containerwrapper">
 				<div class = "address">
-					<img src="images/aunt.jpg" alt="aunt">
+					<img src="img/aunt.jpg" alt="adress">
 					<h3>Address</h3>
 					<p>Id convallis placerat sit sed duis id<br> amet volutpat quam a, pharetra.</p>
 					<h3>Phone</h3>
@@ -35,35 +42,52 @@
 					<div class="contactform-wrapper">
 						<h3>Send Us Message</h3>
 						<form name="contactform">
-						<input type="text" name="name" placeholder="Your Name">
-                        <h4>Email</h4> 
-                        <input type="email" name="email" placeholder="Your Email">
-                        <h4>Message</h4>
-                        <textarea name="message" placeholder="Your Message"></textarea><br>
-						<button type="button">Submit</button>
+							<label for "fullname">Full Name
+							<input type="text" id="fullname" name="fullname" value="" placeholder="Your Name">
+							</label>
+							<label for "email">Your Email
+							<input type="text" id="email" name="email" value="" placeholder="Your Email">
+							</label>
+							<label for "message">Message
+							<textarea id="message" name="message" placeholder="Your Message"></textarea>
+							</label>
+							<button type="button">Submit</button>
 						</form>
 					</div>
 				</div>
-			</div>
+		</div>
+		</div>
 			<div class="containermap">
-				<img src = 'images/map.jpg' alt = "map">
+				<img class="project_img" src="img/map.jpg" alt = "map">
 			</div>
-		</main>
-		<footer>
+		
+		<div class="before_lower">
+			<!--  Footer Header  -->
 			<div class="container">
-				<button type="button">Let’s Talk</button>
-				<h2>Interested to work<br>with our team?</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				<div class="block_first">
+					<div class="block_second">
+						<h3 class="secondWord">Intersted to woek <br>with our team?</h3>
+						<p class="paragraph text_parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<p>
+					</div>
+					<div class="button"><a href="#" class="btn-lt">Let’s Talk</a>
+					</div>
+				</div>
 			</div>
-			<div class="liner"></div>
+			<!--  End footer header  -->
+			<hr class="line">
+			<!-- Footer down -->
 			<div class="container">
-				<ol>
-					<li value="1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-					<li value="20"><a href="tel:+781273134321">+7-812-7313-4321</a></li>
-					<li value="5"><a href="mailto:hello.site@gmail.com">hello.site@gmail.com</a></li>
-				</ol>
-				<p>2021 All rights reserved.</p>
+				<div class="footer">
+					<ol class="cont">
+						<li class="li_cont">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+						<li class="li_cont"><a href="tel:+781273134321">+7-812-7313-4321</a></li>
+						<li class="li_cont"><a href="mailto:hello.site@gmail.com">hello.site@gmail.com</a></li>
+					</ol>
+					<div class="footer_law">
+						<p class="paragraph footer_date"> 2021 All rights reserved.</p>
+					</div>
+				</div>
 			</div>
-		</footer>
+		</div>
 	</body>
 </html>
